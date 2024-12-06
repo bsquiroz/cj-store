@@ -1,0 +1,96 @@
+<script setup lang="ts">
+import { ref } from "vue";
+import type { Console } from "@/types";
+import ConsoleCard from "@/components/shared/ConsoleCard.vue";
+
+const featuredConsoles = ref<Console[]>([
+  {
+    id: 1,
+    name: "PlayStation 5",
+    description:
+      "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-play_bldcog.webp",
+    brand: "PlayStation",
+  },
+  {
+    id: 2,
+    name: "Xbox Series X",
+    description:
+      "The most powerful Xbox ever, featuring true 4K gaming, up to 120 frames per second, and faster load times.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-xbox_qfdzxf.jpg",
+    brand: "Xbox",
+  },
+  {
+    id: 3,
+    name: "Nintendo Switch OLED",
+    description:
+      "Featuring a vibrant 7-inch OLED screen, enhanced audio, and a wide adjustable stand.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-nintendo_kuiuoq.avif",
+    brand: "Nintendo",
+  },
+  {
+    id: 4,
+    name: "Steam Deck Oled 1TB",
+    description:
+      "Equipped with a 7-inch touchscreen display, powerful AMD RDNA 2 graphics, and a custom-designed controller layout for a console-like experience on the go.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-steam_kudqmm.webp",
+    brand: "Portable",
+  },
+]);
+</script>
+
+<template>
+  <div class="container mx-auto px-4 py-8">
+    <section
+      class="bg-[url('https://res.cloudinary.com/dkxs0typu/image/upload/v1733514830/cj-store/principalBanner_k9qcsc.webp')] bg-cover bg-center h-screen bg-fixed mb-8"
+    >
+      <div
+        class="w-full h-full flex flex-col items-center justify-center text-center bg-black/50"
+      >
+        <div class="flex gap-2">
+          <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            Welcome to CJ Store
+          </h1>
+          <figure class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="/icon.png" alt="" />
+          </figure>
+        </div>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Your one-stop destination for all gaming consoles and accessories.
+          Experience gaming like never before with our wide selection of
+          consoles.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+        Featured Consoles
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ConsoleCard
+          v-for="console in featuredConsoles"
+          :key="console.id"
+          v-bind="console"
+        />
+      </div>
+    </section>
+
+    <section class="bg-gray-100 dark:bg-gray-700 rounded-lg p-8">
+      <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+        Gaming Through History
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300">
+        From the early days of the Nintendo Entertainment System to today's
+        cutting-edge consoles, gaming has evolved dramatically. Each generation
+        brings new innovations, better graphics, and more immersive experiences.
+        Our store celebrates this rich history while offering the latest in
+        gaming technology.
+      </p>
+    </section>
+  </div>
+</template>
