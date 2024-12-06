@@ -11,7 +11,7 @@ const playstationConsoles = ref<Console[]>([
     description:
       "Next-gen gaming with revolutionary speed, stunning visuals, and innovative features like haptic feedback and adaptive triggers.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-play5_hubcsy.avif",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-play5_hubcsy.avif",
     brand: "PlayStation",
   },
   {
@@ -20,7 +20,7 @@ const playstationConsoles = ref<Console[]>([
     description:
       "A powerful console delivering 1080p gaming, seamless multiplayer experiences, and immersive storytelling.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-play4_koxbwl.png",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-play4_koxbwl.png",
     brand: "PlayStation",
   },
   {
@@ -29,7 +29,7 @@ const playstationConsoles = ref<Console[]>([
     description:
       "Introduced high-definition gaming with Blu-ray support and became a hub for media and gaming enthusiasts.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-play3_bh9kyc.png",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-play3_bh9kyc.png",
     brand: "PlayStation",
   },
   {
@@ -38,7 +38,7 @@ const playstationConsoles = ref<Console[]>([
     description:
       "One of the best-selling consoles of all time, offering a massive library of iconic games and DVD playback.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-play2_ra43gb.png",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-play2_ra43gb.png",
     brand: "PlayStation",
   },
   {
@@ -47,7 +47,7 @@ const playstationConsoles = ref<Console[]>([
     description:
       "The original PlayStation that revolutionized gaming with 3D graphics and launched iconic franchises.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-play1_ygbhwh.png",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-play1_ygbhwh.png",
     brand: "PlayStation",
   },
 ]);
@@ -58,7 +58,7 @@ const memorableGames = ref<Game[]>([
     title: "Final Fantasy VII",
     description: "Uno de los RPG más influyentes de todos los tiempos.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/play-image-ff7_bpejkk.jpg",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/play-station/play-image-ff7_bpejkk.jpg",
     platform: "PS1",
   },
   {
@@ -66,7 +66,7 @@ const memorableGames = ref<Game[]>([
     title: "Grand Theft Auto: San Andreas",
     description: "Un juego de mundo abierto que revolucionó el género..",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-image-gta_ocrtnv.jpg",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-image-gta_ocrtnv.jpg",
     platform: "PS2",
   },
   {
@@ -74,7 +74,7 @@ const memorableGames = ref<Game[]>([
     title: "The Last of Us",
     description: "Un juego de mundo abierto que revolucionó el género..",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-image-thelast_y1pgph.jpg",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514829/cj-store/play-station/play-image-thelast_y1pgph.jpg",
     platform: "PS3",
   },
   {
@@ -82,7 +82,7 @@ const memorableGames = ref<Game[]>([
     title: "God of War (2018)",
     description: "Un juego de mundo abierto que revolucionó el género..",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/play-image-gow_dyr8oh.jpg",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/play-station/play-image-gow_dyr8oh.jpg",
     platform: "PS4",
   },
   {
@@ -91,7 +91,7 @@ const memorableGames = ref<Game[]>([
     description:
       "Un juego de acción de superhéroes con un mundo abierto vibrante y una historia cautivadora.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/play-image-spider_mr4knf.jpg",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/play-station/play-image-spider_mr4knf.jpg",
     platform: "PS5",
   },
 ]);

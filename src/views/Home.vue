@@ -10,7 +10,7 @@ const featuredConsoles = ref<Console[]>([
     description:
       "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-play_bldcog.webp",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/features/feature-play_bldcog.webp",
     brand: "PlayStation",
   },
   {
@@ -19,7 +19,7 @@ const featuredConsoles = ref<Console[]>([
     description:
       "The most powerful Xbox ever, featuring true 4K gaming, up to 120 frames per second, and faster load times.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-xbox_qfdzxf.jpg",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/features/feature-xbox_qfdzxf.jpg",
     brand: "Xbox",
   },
   {
@@ -28,7 +28,7 @@ const featuredConsoles = ref<Console[]>([
     description:
       "Featuring a vibrant 7-inch OLED screen, enhanced audio, and a wide adjustable stand.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-nintendo_kuiuoq.avif",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/features/feature-nintendo_kuiuoq.avif",
     brand: "Nintendo",
   },
   {
@@ -37,7 +37,7 @@ const featuredConsoles = ref<Console[]>([
     description:
       "Equipped with a 7-inch touchscreen display, powerful AMD RDNA 2 graphics, and a custom-designed controller layout for a console-like experience on the go.",
     imageUrl:
-      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/feature-steam_kudqmm.webp",
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733514828/cj-store/features/feature-steam_kudqmm.webp",
     brand: "Portable",
   },
 ]);
