@@ -1,5 +1,6 @@
 export interface Console {
   id: number;
+  sentence?: string;
   name: string;
   description: string;
   imageUrl: string;
