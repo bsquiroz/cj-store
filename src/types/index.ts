@@ -9,6 +9,7 @@ export interface Console {
 
 export interface Game {
   id: number;
+  sentence?: string;
   title: string;
   description: string;
   imageUrl: string;

@@ -59,14 +59,14 @@ const featuredConsoles = ref<Console[]>([
         class="w-full h-full flex flex-col items-center justify-center text-center bg-black/50"
       >
         <div class="flex gap-2">
-          <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 class="text-4xl font-bold text-white mb-4">
             Welcome to CJ Store
           </h1>
           <figure class="w-10 h-10 rounded-full overflow-hidden">
             <img src="/icon.png" alt="" />
           </figure>
         </div>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
           Your one-stop destination for all gaming consoles and accessories.
           Experience gaming like never before with our wide selection of
           consoles.
