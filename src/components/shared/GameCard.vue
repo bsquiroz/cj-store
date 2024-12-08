@@ -13,7 +13,7 @@ defineProps<Game>();
         v-if="sentence"
         class="absolute bg-black/80 h-full w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center p-2"
       >
-        <p class="text-white text-center">
+        <p class="text-white text-center select-none">
           <strong>{{ sentence }}</strong>
         </p>
       </div>
@@ -34,6 +34,7 @@ defineProps<Game>();
         {{ description }}
       </p>
       <span
+        v-if="platform"
         class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-1 rounded text-sm"
       >
         {{ platform }}

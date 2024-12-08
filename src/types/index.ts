@@ -13,7 +13,7 @@ export interface Game {
   title: string;
   description: string;
   imageUrl: string;
-  platform: string;
+  platform?: string;
 }
 
 export interface MaintenanceService {
