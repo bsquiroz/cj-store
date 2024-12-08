@@ -8,24 +8,45 @@ const portableConsoles = ref<Console[]>([
   {
     id: 1,
     name: "Steam Deck",
+    sentence:
+      "If you want a powerful handheld gaming experience, you will enjoy the Steam Deck.",
     description:
-      "The most powerful gaming handheld, bringing your Steam library on the go.",
-    imageUrl: "/images/steam-deck.jpg",
+      "A portable gaming console that lets you play PC games on the go with full access to your Steam library, featuring powerful hardware and customizable controls.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733679971/cj-store/portables-consoles/portables-image-steam-deck_h8vd4n.png",
     brand: "Portable",
   },
   {
     id: 2,
     name: "ASUS ROG Ally",
-    description: "Windows-powered gaming handheld with AMD processor.",
-    imageUrl: "/images/rog-ally.jpg",
+    sentence:
+      "If you want top-tier performance in a handheld device, you should try the ASUS ROG Ally.",
+    description:
+      "A high-performance gaming console designed for portable PC gaming, offering impressive hardware, a 120Hz display, and compatibility with Windows games and Xbox Game Pass.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733679971/cj-store/portables-consoles/portables-images-ara_naxkqq.png",
     brand: "Portable",
   },
   {
     id: 3,
-    name: "Legion Go",
+    name: "Odin Pro",
+    sentence:
+      "If you love retro gaming and modern Android games, you will enjoy the Odin Pro.",
     description:
-      "Powerful portable Windows gaming with detachable controllers.",
-    imageUrl: "/images/legion-go.jpg",
+      "A versatile handheld console that runs on Android, perfect for retro emulation and playing modern mobile games, with an ergonomic design and powerful performance.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733679971/cj-store/portables-consoles/portables-image-odin_p89riz.png",
+    brand: "Portable",
+  },
+  {
+    id: 4,
+    name: "Legion Go",
+    sentence:
+      "If you want a cutting-edge portable gaming device, you can rely on Legion Go.",
+    description:
+      "A portable Windows gaming console featuring detachable controllers, a high-resolution display, and support for AAA PC games, making it a versatile option for gaming anywhere.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733679971/cj-store/portables-consoles/portables-image-legion_e3kuie.png",
     brand: "Portable",
   },
 ]);
@@ -43,7 +64,7 @@ const portableConsoles = ref<Console[]>([
         <ConsoleCard
           v-for="console in portableConsoles"
           :key="console.id"
-          :console="console"
+          v-bind="console"
         />
       </div>
     </section>
