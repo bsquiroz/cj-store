@@ -39,6 +39,12 @@ const services = ref<MaintenanceService[]>([
   <div class="container mx-auto px-4 py-8">
     <HeaderTitle title="Maintenance" icon="maintenance" />
 
+    <p
+      class="text-2xl font-semibold text-gray-900 dark:text-white my-6 text-center"
+    >
+      <strong>If you care about your console, we'll take even more care</strong>
+    </p>
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <section>
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">

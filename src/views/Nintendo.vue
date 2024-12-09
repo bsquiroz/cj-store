@@ -1,41 +1,45 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import type { Console, Game } from "@/types";
+import type { Console } from "@/types";
 import ConsoleCard from "@/components/shared/ConsoleCard.vue";
 import HeaderTitle from "@/components/shared/HeaderTitle.vue";
 
 const nintendoConsoles = ref<Console[]>([
   {
     id: 1,
-    name: "Nintendo Switch OLED",
-    description:
-      "Enhanced gaming experience with a vibrant 7-inch OLED screen.",
-    imageUrl: "/images/switch-oled.jpg",
-    brand: "Nintendo",
-  },
-  {
-    id: 2,
     name: "Nintendo Switch",
-    description: "The hybrid console that lets you play anywhere.",
-    imageUrl: "/images/switch.jpg",
+    description:
+      "If you want to play wherever and whenever you want, the Nintendo Switch is your best option",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733764157/cj-store/nintendo/nintendo-image-switch_ms5ce8.png",
     brand: "Nintendo",
-  },
-]);
-
-const memorableGames = ref<Game[]>([
-  {
-    id: 1,
-    title: "The Legend of Zelda: Tears of the Kingdom",
-    description: "Embark on an epic adventure in the kingdom of Hyrule.",
-    imageUrl: "/images/zelda.jpg",
-    platform: "Nintendo Switch",
   },
   {
     id: 2,
-    title: "Super Mario Odyssey",
-    description: "Join Mario on a globe-trotting 3D adventure.",
-    imageUrl: "/images/mario.jpg",
-    platform: "Nintendo Switch",
+    name: "Nintendo Wii",
+    description:
+      "If you're looking for a fun way to play with family and friends, the Nintendo Wii is the perfect console for you",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733764157/cj-store/nintendo/nintendo-image-wii_gmqpoy.png",
+    brand: "Nintendo",
+  },
+  {
+    id: 3,
+    name: "Nintendo 64",
+    description:
+      "If you want to relive the golden age of video games, the Nintendo 64 will take you back",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733764157/cj-store/nintendo/nintende-image-64_gt4hh7.png",
+    brand: "Nintendo",
+  },
+  {
+    id: 4,
+    name: "Gameboy",
+    description:
+      "If you buy a Game Boy, you'll have portable fun you can take anywhere and classics that never go out of style, all in the palm of your hand.",
+    imageUrl:
+      "https://res.cloudinary.com/dkxs0typu/image/upload/v1733764157/cj-store/nintendo/nintendo-image-gameboy_vcoftp.png",
+    brand: "Nintendo",
   },
 ]);
 </script>
@@ -49,11 +53,7 @@ const memorableGames = ref<Game[]>([
         Available Consoles
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <ConsoleCard
-          v-for="console in nintendoConsoles"
-          :key="console.id"
-          :console="console"
-        />
+        <ConsoleCard v-for="console in nintendoConsoles" v-bind="console" />
       </div>
     </section>
 
@@ -61,32 +61,9 @@ const memorableGames = ref<Game[]>([
       <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
         Memorable Games
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
-          v-for="game in memorableGames"
-          :key="game.id"
-          class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden"
-        >
-          <img
-            :src="game.imageUrl"
-            :alt="game.title"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              {{ game.title }}
-            </h3>
-            <p class="mt-2 text-gray-600 dark:text-gray-300">
-              {{ game.description }}
-            </p>
-            <span
-              class="mt-2 inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 px-2 py-1 rounded text-sm"
-            >
-              {{ game.platform }}
-            </span>
-          </div>
-        </div>
-      </div>
+      <p class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+        Coming soon...
+      </p>
     </section>
   </div>
 </template>
